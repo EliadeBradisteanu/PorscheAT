@@ -1,0 +1,15 @@
+	
+	#@PPN2-735 moved to 375
+	#Scenario: Special Characters are not allowed when editing a group - but they should
+	    #Given "xtaglobal" is on Ppnadmin home page
+        #When user navigates to "Gruppen" tab
+		#And user populates field "Gruppen durchsuchen" with "XTAA Applikation"
+		#And user selects by table entry "XTAA Applikation"
+		#Then user sees pagebody info "XTAA Applikation"
+		#Then user sees info "XTAA Applikation Porsche AG Porsche Importeur Vertragspartner Backend 1 xtagroupcoordinator pacc@pacc.com xtagroupmanager test Application 1"
+	    #And selects "Gruppe bearbeiten" from Aktionen
+		#And user populates field "Anzeigename" with "XTAA@-/Applikation" 
+        #And user populates field "Beschreibung" with "this group is for tests"	
+		#And user presses "Speichern"	
+		
+    #@PPN2-740 - obsolete because of 735

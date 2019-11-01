@@ -1,0 +1,18 @@
+#@PPN2-613 -- > 571
+	#Scenario: PPN Manager : Show Details and Users of a Device Certificate		
+	    #Given "xtamanager" is on Ppnadmin home page
+	    #Given "xtaglobal" is on Ppnadmin home page
+	    #When user navigates to "Organisationen" tab 
+		#And user searches for "XTA Dealer Sub" in "Nach Organisationen suchen"
+		#And user selects by table entry "XTA Dealer Sub"
+		#And user navigates to "Gerätezertifikate" second row tab
+	    #Then user sees "Zertifikate" search results for "xtagerätezertifikat xtamanager"
+        #And user sees pagebody info "Anzeigename Technischer Anzeigename Status Ablaufdatum Besitzer"
+        #And user selects by subtable entry "xtagerätezertifikat"
+	    #Then user sees info "xtagerätezertifikat Gerätezertifikat Testing 123456789 xtamanager Goodbye12345! Sonstiges"
+	    #And user navigates to "Benutzer" second row tab
+	    #Then user sees "OrganisationBenutzer" search results for "xtacoordinator"
+	    #And user selects by subtable entry "xtacoordinator"
+	    #And user sees pagebody info "User XTA Coordinator XTA Dealers"
+        #Then user logs out of PPN lite    
+	 

@@ -1,0 +1,3 @@
+[1002/142846.487:ERROR:file_io_win.cc(161)] CreateFile C:\Users\eliad\AppData\Local\Temp\scoped_dir13324_1791744539\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[1002/142846.488:ERROR:file_io_win.cc(170)] CreateFile C:\Users\eliad\AppData\Local\Temp\scoped_dir13324_1791744539\Crashpad\reports\174bcf8a-35a0-427a-8bf6-fe471e4e8be8.dmp: The system cannot find the path specified. (0x3)
+[1002/142846.488:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed

@@ -1,0 +1,60 @@
+@PPN2-218
+Feature: User Management        
+  
+  
+    #@PPN2-708 # in 707
+    #Scenario: PPN User: Edit my own profile
+        #Given "xtauser" is on Ppnadmin home page    
+        #Then user clicks on user "User XTA User (PPN_STANDARD_USER)" and select option "Profil bearbeiten"
+	    #Then user sees headertwo info "Benutzer bearbeiten"
+	    #Then dropdown "Akademischer Titel" is disabled
+		#Then field "Vorname*" is disabled
+	    #Then field "Nachname*" is disabled
+	    #Then field "Benutzername*" is disabled
+	    #Then dropdown "Geschlecht" is disabled
+	    #Then field "E-Mail Adresse*" is disabled
+	    #Then field "Gültigkeitsdauer des Benutzerkontos" is disabled
+	    #Then dropdown "Account Status*" is disabled
+        #And user populates field "Mobiltelefon" with "+49-123-456789"
+        #And user populates field "Straße" with "Constantin Brancusi"
+        #And user presses "Speichern"
+        #Then "Der Benutzer" is "wurde erfolgreich bearbeitet"
+        #Then user clicks on user "User XTA User (PPN_STANDARD_USER)" and select option "Profil bearbeiten"
+	    #And user populates field "Mobiltelefon" with ""
+        #And user populates field "Straße" with ""
+        #And user presses "Speichern"
+        #Then "Der Benutzer" is "wurde erfolgreich bearbeitet"
+        #Then user logs out of PPN lite      
+   
+        
+    #@PPN2-736 in 707
+    #Scenario: Show users profile   
+	      #Given "xtacoordinator" is on Ppnadmin home page	            
+          #When user navigates to "Benutzer" tab
+          #And user populates field "Nach Benutzern suche" with "xtauser"
+          #And user selects by table entry "xtauser"
+          #Then user sees pagebody info "User XTA User XTA Dealer Sub" 
+          #Then user logs out of PPN lite     
+   
+   #@PPN2-739 # same as 733
+   #Scenario: N* Add User with special characters  	  
+	    #Given "xtacoordinator" is on Ppnadmin home page
+        #When user navigates to "Organisationen" tab
+        #And user populates field "Nach Organisationen suchen" with "XTA Subsidiary"
+        #And user selects by table entry "XTA Subsidiary"
+        #Then user sees pagebody info "XTA Subsidiary"
+        #And selects "Neuen Benutzer erstellen" from Aktionen
+        #Then user sees pagebody info "Neuen Benutzer erstellen"        
+        #And user populates field "Vorname*" with "XTA"
+        #And user populates field "Nachname*" with "Dealer"
+        #And user populates field "Benutzername*" with "xta'dealer"       
+        #And user populates field "E-Mail Adresse" with "xta@mhp.com"      
+        #And user presses "Speichern"
+        #Then user sees error message "Benutzername: Ungültiges Zeichen"
+        #Then user logs out of PPN lite     
+        
+        
+        
+        
+        
+              	  
